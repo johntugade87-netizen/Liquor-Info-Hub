@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liquor Info Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Liquor Info Hub 🍷</h1>
+    <p>Explore different types of liquors and learn about their origins, flavors, and more!</p>
+  </header>
+
+  <main class="gallery">
+    <div class="card" onclick="showInfo('whiskey')">
+      <img src="images/whiskey.jpg" alt="Whiskey">
+      <h2>Whiskey</h2>
+    </div>
+
+    <div class="card" onclick="showInfo('vodka')">
+      <img src="images/vodka.png" alt="Vodka">
+      <h2>Vodka</h2>
+    </div>
+
+    <div class="card" onclick="showInfo('rum')">
+      <img src="images/rum.jpg" alt="Rum">
+      <h2>Rum</h2>
+    </div>
+
+    <div class="card" onclick="showInfo('tequila')">
+      <img src="images/tequila.jpg" alt="Tequila">
+      <h2>Tequila</h2>
+    </div>
+
+    <div class="card" onclick="showInfo('gin')">
+      <img src="images/gin.jpg" alt="Gin">
+      <h2>Gin</h2>
+    </div>
+
+    <div class="card" onclick="showInfo('brandy')">
+      <img src="images/brandy.jpg" alt="Brandy">
+      <h2>Brandy</h2>
+    </div>
+  </main>
+
+  <!-- Modal -->
+  <div id="infoModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="liquorName"></h2>
+      <p id="liquorInfo"></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Liquor Info Hub | Designed by John Rex Tugade</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
